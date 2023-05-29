@@ -1,0 +1,65 @@
+:root {
+  font-family: Georgia, serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  min-height: 100%;
+  margin: 0;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(26, 128, 237, 1)
+  );
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.navbarItem:hover {
+  border-bottom: solid black;
+  cursor: pointer;
+}
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  overflow: hidden;
+  right: 0px;
+  background-color: white;
+  height: 100vh;
+  justify-content: end;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  z-index: 40;
+  transition-property: width;
+  width: 0%;
+  transition-duration: 300ms;
+}
+
+.openDrawer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  overflow: hidden;
+  right: 0px;
+  background-color: white;
+  height: 100vh;
+  justify-content: end;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  z-index: 40;
+  transition-property: width;
+  width: 40%;
+  transition-duration: 500ms;
+  padding-left: 1rem;
+}
